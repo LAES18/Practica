@@ -22,10 +22,13 @@ public class Catedratico extends Persona {
 
     @Override
     public void mostrarDetalles() {
-        System.out.println("Catedratico: " + getNombre() + ", ID: " + getId() + ", Profesion: " + profesion);
+        System.out.println("Catedrático: " + getNombre() + ", ID: " + getId() + ", Profesion: " + profesion);
         System.out.println("Cursos Asignados:");
         for (Curso curso : cursos) {
             System.out.println(" - " + curso.getNombre());
+        }
+        if (getVehiculo() != null) {
+            System.out.println("Vehículo: " + getVehiculo());
         }
     }
 }

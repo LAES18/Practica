@@ -1,6 +1,7 @@
 abstract class Persona {
     private String nombre;
     private String id;
+    private Vehiculo vehiculo;
 
     public Persona(String nombre, String id) {
         this.nombre = nombre;
@@ -15,5 +16,14 @@ abstract class Persona {
         return id;
     }
 
+    public Vehiculo getVehiculo() {
+        return vehiculo;
+    }
+
+    public void setVehiculo(Vehiculo vehiculo) {
+        this.vehiculo = vehiculo;
+    }
+
     public abstract void mostrarDetalles();
 }
+

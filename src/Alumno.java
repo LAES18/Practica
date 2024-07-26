@@ -27,5 +27,8 @@ public class Alumno extends Persona {
         for (Curso curso : cursos) {
             System.out.println(" - " + curso.getNombre());
         }
+        if (getVehiculo() != null) {
+            System.out.println("Vehículo: " + getVehiculo());
+        }
     }
 }
